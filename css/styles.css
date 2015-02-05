@@ -1,0 +1,228 @@
+/* 
+Project Name: Code Fellows Code Challenge
+Author: Jennifer Nerad
+
+/*
+heads:
+font-family: 'Oswald', sans-serif;
+body: 
+font-family: 'Droid Serif', serif;
+recipe:
+font-family: 'Patrick Hand', cursive;
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; 
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; 
+}
+
+/******************************************/
+
+body {
+     color: #000;
+     font-size: 1em;
+     line-height: 1.2;
+     font-family: 'Droid Serif', serif;
+}
+
+h1, h2{
+     font-family: 'Oswald', sans-serif;
+
+}
+h1 {
+     font-size: 2.5em;
+     font-weight: 700;
+     padding: 0px;
+     margin-bottom: 0px;
+}
+
+h2 {
+     text-transform: uppercase;
+     text-transform: uppercase;
+     font-size: .8em;
+     color: #ccc;
+     font-family: 'Oswald', sans-serif;
+     font-weight: 300;
+     line-height: 1;
+}
+
+h3 { 
+     font-size: 1.5em
+}
+
+p {
+     font-size: 1em;
+     line-height: 1.6;
+}
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+#container {
+	width: 900px;
+	margin: auto;
+}
+
+.hashstripe {
+     margin: 20px 0px 40px 0px;
+}
+
+header {
+     margin: 30px 0px 0px 0px;
+}
+
+.logos {
+     float: left;
+     position: relative;
+}
+
+.social a{
+     padding: 0px 2px 0px 0px;
+     float: right;
+}
+
+.social a:nth-child(2) {
+     margin-left: 4px;
+}
+
+.print {
+     padding: 0px;
+}
+
+.print img {
+     padding: 0px 5px;
+}
+
+.recipe-title {
+     position: relative;
+     top: 27px;
+}
+
+.recipe-title h2 {
+     line-height: 0;
+}
+
+.recipe-post p{
+     padding-bottom: 10px;
+     text-indent: 25px;
+}
+
+.recipe-post img {
+     padding-top: 0px;
+     margin-top: 0px;
+}
+#ingredients {
+     margin: 20px 0px 40px 0px;
+     padding: 20px;
+     background-image: url('../graphics/PaperBackground-900x292.png');
+     background-size: 100%;
+     background-repeat: no-repeat;
+     border-bottom: 1px gray solid;
+     -webkit-box-shadow: 0 8px 6px -6px #ccc; /* Chrome, Safari, Opera */
+     -moz-box-shadow: 0 8px 6px -6px #ccc; /* Firefox */
+     box-shadow: 0 8px 6px -6px #ccc;
+     /*background-color: #FFFFE5;*/
+}
+
+#ingredients ul {
+     list-style-type: none;
+     /*2 columns*/
+          -webkit-column-count: 2; /* Chrome, Safari, Opera */
+          -moz-column-count: 2; /* Firefox */
+          column-count: 2;
+}
+
+#ingredients li{
+     font-family: 'Patrick Hand', cursive;
+     font-size: 1.5em;
+     line-height: 1.3;
+     padding-top: 0px;
+     padding-left: 20px;
+}
+
+input[type=checkbox] {
+  /* All browsers except webkit*/
+     transform: scale(1.2);
+     cursor: pointer;
+     border-radius: 3px;
+     width: 15px;
+     height: 15px;
+     margin-right: 10px;
+     background: rgba(255, 255, 255, 1)
+  -webkit-transform: scale(1.2);
+}
+
+.checked {
+     text-decoration: line-through;
+}
+.share-button {
+     float: right;
+     height: 60px;
+     width: 180px;
+     padding: 10px;
+     color: white;
+     background-color: #C60;
+     text-align: center;
+     font-size: 1.1em;
+     font-family: 'Oswald', sans-serif;
+     font-weight: 300;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     position: relative;
+     top: -10px;
+     border: 0;
+     margin-left: 20px;
+}
+
+.author {
+     line-height: 0;
+}
+
+.author img {
+     position: relative;
+     top: -25px;
+}
+
+footer {
+     text-align: center;
+}
+
+footer p {
+     color: #ccc;
+     line-height: .5;
+}
+
+footer img {
+     position: relative;
+     top: -30px;
+     border: 5px white solid;
+}
